@@ -1,7 +1,7 @@
 # QUILL_STATE テンプレート
 
 このファイルは雛形です。編集しないでください。
-`state/current.md` を新規作成する際にコピーして使います。
+`Story/{TITLE}/state/current.md` を新規作成する際にコピーして使います。
 
 ---
 
