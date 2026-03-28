@@ -110,7 +110,7 @@ STATUS:writing
 TITLE:{作品タイトル}
 GENRE:{ジャンル}
 PREMISE:{一行あらすじ}
-TARGET_LEN:{目標文字数（シーン数×5000を目安に提案。ユーザーが決める）}
+TARGET_VOL:{ボリューム感（掌編／短編／中編／短編連載）}
 FORMAT:default
 OUTLINE_MODE:{basic/free}
 
@@ -124,7 +124,7 @@ OUTLINE:{シーン番号}|{機能:起/承/転/結/自由}|{場所}|{目的}|{必
 （シーン数分繰り返す）
 
 EVAL_CHAR:BM
-PROGRESS:0|0
+PROGRESS:0
 MEMO:（空欄）
 <</QUILL_STATE>>
 ```
@@ -165,7 +165,7 @@ MEMO:（空欄）
 - OUTLINE の目的・必須要素を満たす
 - 登場キャラの `wants/but`・口調を維持する（`characters/main_cast/` を参照）
 - `engines/kinsoku.md` の禁則処理に従う
-- 目安 5,000字（前後 ±1,000字は許容）
+- ボリュームは TARGET_VOL に合わせる（掌編：軽め1シーン / 短編：読み応えある1シーン / 中編・短編連載：複数シーン全体で完結）
 - 末尾に次シーンへの「引き」を置く
 
 ### STEP 4：scenes/scene_N.md に保存
@@ -179,7 +179,7 @@ MEMO:（空欄）
 ### STEP 6：STATE 更新
 
 ```
-PROGRESS: {シーン番号+1}|{累積文字数（今シーンの字数を加算）}
+PROGRESS: {シーン番号+1}
 MEMO: {今シーンの着地を1文} / {次シーンへの引き継ぎ2〜3行}
 ```
 
@@ -205,7 +205,7 @@ git push
 生成日：{date}
 
 ### 全体構成
-シーン数: {N} / 目標文字数: {TARGET_LEN}字 / ジャンル: {GENRE}
+シーン数: {N} / ボリューム: {TARGET_VOL} / ジャンル: {GENRE}
 
 ---
 
@@ -250,12 +250,12 @@ git push
 | `TITLE` | 作品タイトル | 仮題可 |
 | `GENRE` | ジャンル | 1〜2語 |
 | `PREMISE` | 一行あらすじ | 15〜30字目安 |
-| `TARGET_LEN` | 目標文字数 | シーン数×5000が目安 |
+| `TARGET_VOL` | ボリューム感 | 掌編／短編／中編／短編連載 |
 | `FORMAT` | 禁則設定コード | defaultまたはkinsoku.md参照 |
 | `OUTLINE_MODE` | `basic` / `free` | |
 | `CHAR` | キャラクター定義 | 1行1キャラ |
 | `REL` | 関係性定義 | 1行1関係 |
 | `OUTLINE` | シーン構成 | 1行1シーン |
 | `EVAL_CHAR` | 評価担当キャラのコード | デフォルト: BM（バケツマン） |
-| `PROGRESS` | `現在シーン番号\|累積文字数` | 自動更新 |
+| `PROGRESS` | `現在シーン番号` | 自動更新 |
 | `MEMO` | 前シーン引き継ぎ | 2〜3行 |
