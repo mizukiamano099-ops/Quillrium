@@ -1,5 +1,9 @@
 # Quill-rium β
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Beta](https://img.shields.io/badge/status-beta-blue)
+![Powered by Claude Code](https://img.shields.io/badge/Powered%20by-Claude%20Code-blueviolet)
+
 > **"Write your short story — all the way to the end."**
 
 A short fiction writing framework that runs inside Claude Code.

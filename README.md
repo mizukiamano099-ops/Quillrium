@@ -1,5 +1,9 @@
 # Quill-rium（クイルリウム）β
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Beta](https://img.shields.io/badge/status-beta-blue)
+![Powered by Claude Code](https://img.shields.io/badge/Powered%20by-Claude%20Code-blueviolet)
+
 > **「短編を、最後まで書ける」**
 
 Claude Code で動く、短編小説執筆支援フレームワーク。
