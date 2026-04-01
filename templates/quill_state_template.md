@@ -21,6 +21,14 @@ REL:{Aコード}>{Bコード}|好意{0-9},緊張{0-9},距離{0-9}|{関係メモ}
 
 OUTLINE:{番号}|{機能:起/承/転/結/自由}|{場所}|{目的}|{必須要素}
 
+AUTHOR_PROFILE:|Exploratory|（未設定）|
+フォーマット：
+AUTHOR_PROFILE:{MBTI省略可}|{Cognitive Style}|{物語DNA要約30字以内}|{地雷逆算キーワード}
+例：
+AUTHOR_PROFILE:INFJ|Holistic|感情の爆発より沈黙の重さを好む|努力報酬の安易な回収を嫌う
+AUTHOR_PROFILE:|Analytical|矛盾するキャラが動く話が好き|感情の説明過多が嫌い
+AUTHOR_PROFILE:|Exploratory|（未設定）|
+
 EVAL_CHAR:BM
 PROGRESS:0
 MEMO:
